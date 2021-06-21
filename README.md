@@ -1,0 +1,2 @@
+# youtubelolcounter
+YouTubeのLiveアーカイブにてコメントされたものを抽出し、LOL,LMAOなどをカウントする
