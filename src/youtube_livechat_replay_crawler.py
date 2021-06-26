@@ -15,7 +15,7 @@ headers = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/5
 
 # まず動画ページにrequestsを実行しhtmlソースを手に入れてlive_chat_replayの先頭のurlを入手
 resp = session.get(target_url)
-resp.html.render(sleep=3, timeout=20)
+resp.html.render(sleep=3, timeout=50)
 
 resp_date = resp.html.search("回視聴{date} にライブ配信")['date'][-10:]
 resp_date = resp_date.replace('/', '-')

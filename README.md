@@ -4,13 +4,13 @@ YouTubeのLiveアーカイブにてコメントされたものを抽出し、LOL
 
 ## Requirements
 
-### pipenv
+### poetry
 
-pipenvはbundler, composer, npm, cargo, yarnのような、Pythonのパッケージマネージャ。  
+poetryはbundler, composer, npm, cargo, yarnのような、Pythonのパッケージマネージャ。  
 Manjaro Linux(Arch系)では、以下のようにインストールする。
 
 ```bash
-$ sudo pacman -S python-pipenv
+sudo pacman -S python-poetry
 ```
 
 ## Setup
@@ -18,9 +18,9 @@ $ sudo pacman -S python-pipenv
 リポジトリをクローンし、pythonパッケージのインストールを行う。
 
 ```bash
-$ git clone https://github.com/yuk1h1ra/youtubelolcounter.git
-$ cd youtubelolcounter
-$ pipenv install
+git clone https://github.com/yuk1h1ra/youtubelolcounter.git
+cd youtubelolcounter
+poetry install
 ```
 
 ## Execute
@@ -32,7 +32,7 @@ $ pipenv install
 2時間程度のアーカイブで、5分~10分程度かかる。  
 
 ```bash
-$ pipenv run python src/youtube_livechat_replay_crawler.py
+$ poetry run python src/youtube_livechat_replay_crawler.py
 Input YouTube URL: <Target URL>
 ```
 
